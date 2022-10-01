@@ -19,7 +19,9 @@ app.use('/todos', todosRoutes)
 const mongoURL = process.env.DB_URL;
 
 app.get('/', (req, res) => {
-    res.send('Welcome to Todos App server!')
+    res.send({
+        message: "Welcome to Todo App APIs!"
+    })
 })
 
 const PORT = process.env.PORT || 5000;
