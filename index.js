@@ -14,7 +14,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.use(cors());
 
-app.use('/todos', todosRoutes)
+app.use('/api/todos', todosRoutes)
 
 const mongoURL = process.env.DB_URL;
 
